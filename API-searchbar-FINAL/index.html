@@ -16,16 +16,21 @@
         <span>Welcome to the</span>
         <h1>Dad joke generator</h1>
     </div>
-    
-    <div class="buttons">
-        <button 
-            type="button" 
-            class="btn" 
-            id="joke-btn">
-                Generate a dad joke!
-        </button>
-              
+    <div class="btn-wrapper">
+        <div class="buttons">
+            <label for="joke-btn">Click the button below to generate a random dad joke:</label>
+
+            <button 
+                type="button" 
+                class="btn" 
+                id="joke-btn">
+                    Generate a dad joke!
+            </button>
+        </div> 
+           
         <div class="form-group">
+            <label for="search">Enter a search term to search for specific dad jokes:</label>
+
             <input 
                 type="text" 
                 id="search" 
@@ -33,8 +38,8 @@
                 placeholder="search joke..."
             />
         </div>
-    </div>      
-       
+             
+    </div>
         <div class="joke-area" id="joke-area">
             <ul id="search-list"></ul>
             
