@@ -33,6 +33,7 @@ const addJoke = () => {
 }
 
 jokeBtn.addEventListener( 'click', addJoke);
+
 // ------------------------------------ add search results -------------------------------------------
 
 
@@ -60,7 +61,6 @@ const searchJokes = async searchText => {
     });
 
     //Clear results
-
     if (searchText && searchText.trim().length > 0) {
         searchText = searchText.trim().toLowerCase();
         outputHtml(matches).sort((jokeA, jokeB) => {
@@ -69,14 +69,9 @@ const searchJokes = async searchText => {
     } else {
         clearList();
     }
-    // if(searchText.length === 0) {
-    //     matches = [];
-        
-    // }
-
-    
 };
 
+//clear list function
 function clearList() {
     while (matchList.firstChild) {
         matchList.removeChild(matchList.firstChild);
@@ -102,9 +97,7 @@ const outputHtml = matches => {
 
         matchList.innerHTML = html;
     }
-
 }
-
 
 //event listener
 search.addEventListener('input', () => searchJokes(search.value));
