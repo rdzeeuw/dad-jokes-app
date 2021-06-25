@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Viaoda+Libre&display=swap');
+
+body {
+    font-family: sans-serif;
+    background-color: #111d4a;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Viaoda Libre', cursive;
+    line-height: 1.6em;
+    font-weight: bold;
+    overflow-Y: scroll;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Aclonica', sans-serif;
+    margin-top: .5em;
+}
+
+h1 {
+    color: orange;
+    font-size: 5em;
+    line-height: .8em;
+    margin-top: .2em;
+    margin-bottom: .5em;
+}
+
+.buttons {
+    width: 60%;
+    min-width: 600px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: 1 1 600px;
+    padding: 2em;
+    font-family: 'Viaoda Libre', cursive;
+
+}
+
+.btn {
+    padding: .5em 1em;
+    border: 3px solid white;
+    background: rgba(255, 166, 0, 0.9);
+    color: white;
+    min-width: 250px;
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.btn:hover,
+.btn:focus {
+    background: rgba(255, 166, 0, 1);
+    cursor: pointer;
+}
+
+.form-group input {
+    padding: .5em 1em;
+    min-width: 250px;
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 3px solid white;
+    background: rgba(255, 166, 0, 0.9);
+    color: white;
+}
+
+.form-group input:hover, 
+.form-group input:focus {
+    background: rgba(255, 166, 0, 1);           
+    }
+
+.joke-area {
+    background: white;
+    color: #111d4a;
+    padding: 2em;
+    width: 70%;
+    min-width: 500px;
+    height: 400px;
+    overflow: scroll;
+    font-size: 1.4em;
+    list-style-type: none;
+    text-align: center;
+}
+
+.joke-area li {
+    padding-block: 1em;
+}
+
+
